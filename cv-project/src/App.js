@@ -1,25 +1,15 @@
 import React from "react";
-import uniqid from "uniqid";
+// import Instructions from "./components/Instructions";
+import Resume from "./components/Resume";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    
-    this.state = {
-      task: {
-        text: '',
-        id: uniqid()
-      },
-      tasks: [],
-    }
-  }
-
   render() {
     return (
       <div className="App">
-        
+        {/* <Instructions /> */}
+        <Resume />
       </div>
-    );
+    )
   }
 }
 
